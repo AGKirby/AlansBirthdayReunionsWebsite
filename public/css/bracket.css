@@ -1,0 +1,36 @@
+table {
+    border-collapse: collapse;
+    border: 3px solid black; /* none */
+    /* width: 80vw; */
+    height: 90vh;
+}
+
+td {
+    border: none;
+    vertical-align: bottom;
+}
+
+td.name {
+    border-bottom: 1px solid black;
+}
+td.name:hover {
+    background-color: greenyellow;
+}
+
+td.name_ {
+    border-bottom: 1px solid black;
+}
+
+td:hover{
+    background-color: orange;
+}
+
+td.side {
+    border-right: 1px solid black;
+}
+
+#competitors {
+    height: 20vh;
+}
+
+

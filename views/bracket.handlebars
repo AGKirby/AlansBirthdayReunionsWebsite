@@ -1,0 +1,20 @@
+<h2>Enter Bracket Information:</h2> 
+<p>Enter competitors: one on each line, ordered from the one seed to the highest seed.</p>
+<textarea id="competitors" cols="20" rows="32"></textarea><br><br>
+<input type="checkbox" id="randomize">Randomize Seeds<br><br>
+<!-- <div>
+  <input type="radio" name="format" value="Single">
+  <label for="Single">Single Elimination</label><br>
+   Add 3rd place match and tiebreaker options 
+  <input type="radio" name="format" value="Double">
+  <label for="Double">Double Elimination</label><br>
+  <input type="radio" name="format" value="Reverse">
+  <label for="Reverse">Reverse Bracket Format</label><br>
+</div><br> -->
+<button onclick="generate()">Generate Bracket</button><br><br><br><br>
+<table id="bracketTable" style="display: none;">
+      <tbody id="bracket">
+   </tbody>
+</table>
+<script src="scripts/bracket.js"></script>
+<link rel="stylesheet" href="css/bracket.css" type="text/css">

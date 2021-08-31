@@ -1,0 +1,63 @@
+<div>
+    <h2>Select the two competitors and the category of game they are competing in:</h2>
+    <h3>Competitor 1:</h3><select id="player1"><option></option></select>
+    <h3>Competitor 2:</h3><select id="player2"><option></option></select>
+    <h3>Category:</h3><select id="category">
+        <option></option>
+        <option value="hungerGames">Hunger Games</option>
+        <option value="athletic">Athletics</option>
+        <option value="boardCard">Board/Card Games</option>
+        <option value="table">Table Games</option>
+        <option value="video">Video Games</option>
+        <option value="speedrun">Speedruns</option>
+        <option value="smash">Smash Bros</option>
+    </select>
+    <button onclick="hth_calculate()">Calculate Odds</button>
+</div>
+<br><br>
+<h2 id="error"></h2>
+<table class="two-columns">
+    <col style="width:40%">
+    <col style="width:20%">
+    <col style="width:40%">
+    <tbody>
+    <tr>
+        <td><h1 id="player1-name"></h1></td>
+        <td class="middle"><h2>VS</h2></td>
+        <td><h1 id="player2-name"></h1></td>
+    </tr>
+    <tr>
+        <td><img id="player1-img" style="width: 33%;"></td>
+        <td class="middle"><h2>Pictures</h2></td>
+        <td><img id="player2-img" style="width: 33%;"></td>
+    </tr>
+    <tr>
+        <td><h2 id="player1-elo"></h2></td>
+        <td class="middle"><h2>ELO Scores</h2></td>
+        <td><h2 id="player2-elo"></h2></td>
+    </tr>
+    <tr>
+        <td><h2 id="player1-chance"></h2></td>
+        <td class="middle"><h2>% Chance to Win</h2></td>
+        <td><h2 id="player2-chance"></h2></td>
+    </tr>
+    <tr>
+        <td><h2 id="player1-odds"></h2></td>
+        <td class="middle"><h2>Betting Odds</h2></td>
+        <td><h2 id="player2-odds"></h2></td>
+    </tr>
+    <tr>
+        <td><button onclick="hth_winnings(1)">Winner</button></td>
+        <td class="middle">
+            <label>Amount on winner:</label>
+            <input type="number" id="betAmount" min="1">
+        </td>
+        <td><button onclick="hth_winnings(2)">Winner</button></td>
+    </tr>
+    </tbody>
+</table>
+<h2 id="winnings" style="text-align: center"></h2>
+<br>
+<button onclick="updateScores()" id="update" style="display: none; margin: 0 auto">Update Scores</button>
+<br><br>
+<script src="scripts/betting.js"></script>

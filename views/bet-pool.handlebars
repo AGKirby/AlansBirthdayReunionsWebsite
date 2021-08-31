@@ -1,0 +1,54 @@
+<div>
+    <h2>Select all of the competitors and the category of game they are competing in:</h2>
+    <h3>Competitors:</h3>       
+    <div id="list1" class="dropdown-check-list" tabindex="100">
+        <span class="anchor">Select Competitors</span>
+        <ul class="items" id="players"></ul>
+    </div>
+    <h3>Category:</h3><select id="category" onchange="toggleDistance();">
+        <option></option>
+        <option value="hungerGames">Hunger Games</option>
+        <option value="athletic">Athletics</option>
+        <option value="boardCard">Board/Card Games</option>
+        <option value="table">Table Games</option>
+        <option value="video">Video Games</option>
+        <option value="speedrun">Speedruns</option>
+        <option value="smash">Smash Bros</option>
+        <option value="triathlon">Triathlon</option>
+    </select><br><br>
+    <div id="triathlon" style="display: none;">
+        <h3>Triathlon Distance:</h3>
+      <input type="radio" name="distance" value="Super">
+      <label for="Super">Super Sprint Distance Triathlon</label><br>
+      <input type="radio" name="distance" value="Sprint">
+      <label for="Sprint">Sprint Distance Triathlon</label><br>
+      <input type="radio" name="distance" value="Olympic">
+      <label for="Olympic">Olympic Triathlon</label><br>
+        <input type="radio" name="distance" value="Half" style="margin-left: 13px;">
+      <label for="Half">Half Ironman</label><br>
+        <input type="radio" name="distance" value="Full" style="margin-left: 13px;">
+      <label for="Full">Full Ironman</label><br><br>
+    </div>
+    <button onclick="pool_calculate()">Calculate Odds</button>
+</div>        
+<h2 id="error"></h2>
+<br><br>
+<label>Amount on winner:</label>
+<input type="number" id="betAmount" min="1">
+<br>
+<h2 id="winnings" style="text-align: center"></h2>
+<table id="compTable">
+    <tbody id="competitors">
+    <tr class="middle">
+        <th>Name<br><button onclick="sortTable(0)">Sort</button></th>
+        <th>Picture</th>
+        <th>ELO Score<br><button onclick="sortTable(2)">Sort</button></th>
+        <th>Averaged Win%<br><button onclick="sortTable(3)">Sort</button></th>
+        <th>Averaged Odds<br><button onclick="sortTable(4)">Sort</button></th>
+        <th>Winner?</th>
+    </tr>
+    </tbody>
+</table>
+<br><br>
+<script src="scripts/betting.js"></script>
+<link rel="stylesheet" href="css/multiselect.css" type="text/css">

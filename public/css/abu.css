@@ -1,0 +1,18 @@
+.three{
+    background: greenyellow;
+}
+.two{
+    background-color: yellow;
+}
+.one{
+    background-color: orange;
+}
+.zero{
+    background-color: red;
+}
+.blank{
+    border-width: 0px;
+}
+.grand{
+    font-weight: bold;
+}

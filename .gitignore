@@ -1,0 +1,3 @@
+# exclude files that do not need to be public
+
+node_modules
