@@ -241,3 +241,15 @@ td.middle > h2{
 table.two-columns > option{
   font-size: large;
 }
+
+.winner {
+  color: #CFB53B;
+}
+
+.runnerUp {
+  color: #C0C0C0;
+}
+
+.thirdPlace {
+  color: #CD7F32;
+}

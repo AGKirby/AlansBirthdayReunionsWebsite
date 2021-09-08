@@ -68,6 +68,18 @@ app.get('/history-ABR',function(req,res){
   res.render('history-ABR', context)
 });
 
+app.get('/history-Teams',function(req,res){
+  var context = {};
+  context.title = "Alan's Birthday Teams History"
+  res.render('history-Teams', context)
+});
+
+app.get('/history-HG',function(req,res){
+  var context = {};
+  context.title = "Hunger Games History"
+  res.render('history-HG', context)
+});
+
 app.get('/history-statistics',function(req,res){
   var context = {};
   context.title = "Alan's Birthday Statistics"
